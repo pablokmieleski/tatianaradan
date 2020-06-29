@@ -22,22 +22,20 @@
 <body>
   <nav>
     <ul>
-        <li><a href="#about-me">about me</a></li>
-        <li><a href="#offer">offer</a></li>
-        <li><a href="#contact">contact</a></li>
+      <li><a href="#about-me">about me</a></li>
+      <li><a href="#offer">offer</a></li>
+      <li><a href="#contact">contact</a></li>
     </ul>
-</nav>
+  </nav>
   <main>
-    <section class="hero">
-      <img src="../assets/img/avatar.png" class="hero__image" alt="Pawel.">
-      <h2 class="hero__title">Hey there! 👋 My name is Tatiana Radan and I’m a personal trainer and nutritionist</h2>
-      <p class="hero__description">If you want a personal trainer who is enthusiastic, motivational and highly qualified
-        then look no further!<a class="hero__link" href="#my-offer">my
-          offer</a>. Don’t forget to have a glimpse at <a class="hero__link" href="#my-offer">my offer</a> .
-        Don't wait and book your first session TODAY! <a class="hero__link" href="#contact">contact me 😊</a></p>
-      <a class="hero__mail" href="mailto:tatiana.radan@gmail.com" target="_blank"
-        rel="nofollow noreferrer">tatiana.radan@gmail.com</a>or simply give me a call on 07568071838</a>
-    </section>
+    <div class="welcome">
+      <div class="image__container"><img src="../assets/img/avatar.png" class="hero__image" alt="Pawel.">
+      </div>
+      <div class="title__container">
+        <h2> Hey there! 👋, my name is <p class="special">Tatiana Radan</p>
+        <span> and I am personal trainer & nutritionist</span></h2>
+      </div>
+    </div>
     <section id="about-me" class="about-me">
       <div class="about-me__description">My name is Tatiana. I am a PT and Nutrition Consultant in Milton Keynes. After
         years in the marketing and sales industry, I made the decision to turn my passion for training into a full time
@@ -55,7 +53,10 @@
         through the pregnancies that you can be healthy, beautiful, strong and driven!
 
         The most important whatever your goal is I will be there to motivate and support you so you will learn how to
-        love yourself no matter what!</div>
+        love yourself no matter what!
+      
+        If you want a personal trainer who is enthusiastic, motivational and highly
+        qualified then look no further!</div>
       <ul class="specialist__list">Specialist Areas:</ul>
       <li class="specialist__item">Weight Management and Fat Loss</li>
       <li class="specialist__item">Corrective Exercises</li>
@@ -131,24 +132,34 @@
     </section>
 
     <footer id="contact" class="contact">
-      <h2 class="contact__title">Contact me</h2>
-      <div class="container">
-        <ul class="social">
-          <li class="social__item"><a class="social__link" href="https://www.facebook.com/tatiana.radan" target="_blank"
-              rel="nofollow noreferrer"><img class="social__icon" src="../assets/img/fb-icon.svg" alt="facebook"></a>
-          </li>
-          <li class="social__item"><a class="social__link" href="https://www.instagram.com/tatianaradan/"
-              target="_blank" rel="nofollow noreferrer"><img class=" social__icon"
-                src="../assets/img/instagram-icon.svg" alt="instagram"></a>
-          </li>
-          <li class="social__item"><a class="social__link" href="07568071838" target="_blank"
-              rel="nofollow noreferrer"><img class="social__icon" src="../assets/img/github-icon-white.svg"
-                alt="telephone"></a>
-          </li>
-        </ul>
-        <a class="contact__mail" href="mailto:tatiana.radan@gmail.com" target="_blank"
-          rel="nofollow noreferrer">tatiana.radan@gmail.com</a>
-      </div>
+      <div class="contact__left">
+        <h2 class="contact__title">Where to find me: </h2>
+        <div class="container">
+          <h2>Location: </h2>
+          <p>Pure Gym Address: WINTERHILL HOUSE, Snowdon Dr, Winterhill, Milton Keynes MK6 1BP, United Kingdom</p>
+          <h2>Telephone:</h2>
+          <p>07568071838</p>
+          <h2>Mail :</h2>
+          <p><a class="contact__mail" href="mailto:tatiana.radan@gmail.com" target="_blank" rel="nofollow noreferrer">tatiana.radan@gmail.com</a></p>
+          <ul class="social">
+            <li class="social__item"><a class="social__link" href="https://www.facebook.com/tatiana.radan"
+                target="_blank" rel="nofollow noreferrer"><img class="social__icon" src="../assets/img/fb-icon.svg"
+                  alt="facebook"></a>
+            </li>
+            <li class="social__item"><a class="social__link" href="https://www.instagram.com/tatianaradan/"
+                target="_blank" rel="nofollow noreferrer"><img class=" social__icon"
+                  src="../assets/img/instagram-icon.svg" alt="instagram"></a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="contact__right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9819.919305042105!2d-0.7597101!3d52.0254652!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x765e3e2f0ac279aa!2sPureGym%20Milton%20Keynes!5e0!3m2!1sen!2spl!4v1593466979476!5m2!1sen!2spl"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <div class="footer__bottom"><p>Made with <i class="fa fa-heart"></i> by Pawel Chmielewski</p></div>
     </footer>
     <div id="hamburger">
       <div class="line line-1"></div>
