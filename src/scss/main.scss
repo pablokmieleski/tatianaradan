@@ -1,10 +1,12 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/aboutme.scss";
+@import "modules/offer.scss";
+@import "modules/contact.scss";
 
 body {
-  background: $wtf;
+  background: grey;
   color: #fff;
   display: flex;
   align-items: center;
