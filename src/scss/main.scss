@@ -2,8 +2,13 @@
 
 @import "_variables";
 @import "modules/aboutme.scss";
+@import "modules/hamburger.scss";
 @import "modules/offer.scss";
 @import "modules/contact.scss";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: grey;
