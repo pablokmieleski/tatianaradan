@@ -1,0 +1,20 @@
+.about-me {
+    margin: 0 auto;
+    padding: 4rem 8rem 4rem;
+    text-align: center;
+    line-height: 2rem;
+    &__title {
+        padding: 2rem 0 1rem;
+    }
+    &__list {
+        list-style: none;
+    }
+}
+
+.specialist__title {
+    padding: 2rem 0 1rem;
+}
+
+.specialist__list {
+    list-style: none;
+}

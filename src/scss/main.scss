@@ -1,5 +1,7 @@
 @import "~normalize.css";
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600&display=swap");
+
 @import "_variables";
 @import "modules/aboutme.scss";
 @import "modules/hamburger.scss";
@@ -8,11 +10,28 @@
 @import "modules/welcome.scss";
 
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body {
-  background: grey;
-  color: #fff;
+  background: #fff;
+  color: rgb(42, 190, 66);
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lato";
 }
+

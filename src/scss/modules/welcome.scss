@@ -1,25 +1,22 @@
 .welcome {
-		display: flex;
-		align-items: flex-start;
+	display: flex;
+	align-items: center;
+	margin-left: 8rem;
+	margin-bottom: 4rem;
+	&__image {
+		max-height: 800px;
+		margin-right: auto;
+		display: block;
+		padding: 1px;
+		border: 1px solid #021a40;
 	}
-
-.image__container {
-	padding: 4rem 4rem;
-
-}
-
-.title__container {
-	padding: 16rem 4rem;
+	&__right {
+		padding: 4rem;
+	}
 }
 
 .special {
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 5.25rem;
 	line-height: 6.25rem;
-}
-
-.welcome__image {
-	width: 500px;
-	padding:1px;
-	border:1px solid #021a40;
 }
