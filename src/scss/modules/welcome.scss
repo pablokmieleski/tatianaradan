@@ -1,22 +1,10 @@
 .welcome {
-	display: flex;
-	align-items: center;
-	margin-left: 8rem;
-	margin-bottom: 4rem;
-	&__image {
-		max-height: 800px;
-		margin-right: auto;
-		display: block;
-		padding: 1px;
-		border: 1px solid #021a40;
-	}
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 16px;
+	grid-row-gap: 16px;
 	&__right {
-		padding: 4rem;
+		text-align: center;
+		padding-top: 20rem;
 	}
-}
-
-.special {
-	font-weight: 500;
-	font-size: 5.25rem;
-	line-height: 6.25rem;
 }

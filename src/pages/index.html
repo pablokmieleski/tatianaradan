@@ -20,24 +20,29 @@
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="#about-me">about me</a></li>
-      <li><a href="#offer">offer</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
-  </nav>
+  <header class="site-header">
+    <button class="hamburger hamburger--js" aria-label="otwórz menu">≡</button>
+    <nav class="navigation">
+      <ul class="navigation__list navigation__list--js">
+        <li class="navigation__item"><a class="navigation__link" href="#about">About me</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#offer">Offer</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <div class="welcome">
-      <div class="welcome__right"><img src="../assets/img/tatiana.jpg" class="welcome__image" alt="Tatiana.">
+      <div class="welcome__left"><img src="../assets/img/tatiana.jpg" class="welcome__photo" alt="Tatiana.">
       </div>
-      <div class="welcome__left">
-        <h2> Hey there! 👋, my name is <p class="special">Tatiana Radan</p>
-          <span> and I am personal trainer & nutritionist</span></h2>
+      <div class="welcome__right">
+        <h2> Hey there! 👋, <br><br><br> my name is <br><br><br>
+          <p class="special">Tatiana Radan</p>
+          <span> <br><br><br>and I am personal trainer & nutritionist</span>
+        </h2>
       </div>
     </div>
 
-    <section id="about-me" class="about-me">
+    <section id="about" class="about">
       My name is Tatiana. I am a PT and Nutrition Consultant in Milton Keynes. After
       years in the marketing and sales industry, I made the decision to turn my passion for training into a full time
       career.
@@ -58,19 +63,21 @@
 
       If you want a personal trainer who is enthusiastic, motivational and highly
       qualified then look no further!
-      <h2 class="about-me__title">Qualifications: </h2>
-      <ul class="about-me__list">
-        <li class="about-me__item">2 Certificate in Fitness Instructing</li>
-        <li class="about-me__item">Level 3 Certificate in Personal Training</li>
-        <li class="about-me__item">Level 2 Award in Instructing Circuit Sessions</li>
-        <li class="about-me__item">Level 2 Award in Instructing Kettlebells</li>
-        <li class="about-me__item">Postural Assessment and Corrective Exercise Instructor</li>
-        <li class="about-me__item">Pre and Post Natal Trainer</li>
-        <li class="about-me__item">Conditioning and Strength Coach</li>
-        <li class="about-me__item">Certificate in First Aid</li>
+    </section>
+    <section class="qualification">
+      <h2 class="qualification__title">Qualifications: </h2>
+      <ul class="qualification__list">
+        <li class="qualification__item">2 Certificate in Fitness Instructing</li>
+        <li class="qualification__item">Level 3 Certificate in Personal Training</li>
+        <li class="qualification__item">Level 2 Award in Instructing Circuit Sessions</li>
+        <li class="qualification__item">Level 2 Award in Instructing Kettlebells</li>
+        <li class="qualification__item">Postural Assessment and Corrective Exercise Instructor</li>
+        <li class="qualification__item">Pre and Post Natal Trainer</li>
+        <li class="qualification__item">Conditioning and Strength Coach</li>
+        <li class="qualification__item">Certificate in First Aid</li>
       </ul>
-      </div>
-      <div class="REPs_logo"> REPS LOGO</div>
+    </section>
+    <section class="specialist">
       <h2 class="specialist__title">Specialist Areas:</h2>
       <ul class="specialist__list">
         <li class="specialist__item">Weight Management and Fat Loss</li>
@@ -82,6 +89,8 @@
         <li class="specialist__item">Nutritional and Training Plans</li>
       </ul>
     </section>
+    <div class="REPs_logo"> REPS LOGO</div>
+
     <section id="offer" class="offer">
       <h2 class="offer__title">My offer</h2>
       <p class="offer-promo">Free trial 30 minutes consultation before you book sessions!</p>
@@ -172,7 +181,7 @@
           tabindex="0"></iframe>
     </section>
     <footer class="footer">
-      <p>Made with <i class="fa fa-heart"></i> by Pawel Chmielewski</p>
+      <p class="footer__paragraph">Made with <i class="fa fa-heart"></i> by Pawel Chmielewski</p>
     </footer>
 
     <div id="hamburger">

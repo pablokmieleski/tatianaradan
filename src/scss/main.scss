@@ -9,29 +9,132 @@
 @import "modules/contact.scss";
 @import "modules/welcome.scss";
 
+
 html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-size: 16px;
+	box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
-}
-
-.main {
-  max-width: 1200px;
-  margin: 0 auto;
+	box-sizing: inherit;
 }
 
 body {
-  background: #fff;
-  color: rgb(42, 190, 66);
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Lato";
+	background-color: #08aeea;
+	background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
 }
 
+.content {
+	grid-area: content;
+}
+
+.welcome__photo {
+	max-width: 100%;
+  max-height: 800px;
+  margin-top: 100px;
+	margin-left: 72px;
+	margin-right: auto;
+	display: block;
+}
+
+
+.footer__paragraph {
+	color: pink;
+}
+
+.footer__paragraph::before {
+	content: "";
+	display: inline-block;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background: tomato;
+}
+
+.footer__paragraph::after {
+	content: "HELLO";
+	display: block;
+	width: 100px;
+	height: 20px;
+	background: tomato;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 16px;
+	grid-row-gap: 16px;
+}
+
+
+.main {
+	width: 100%;
+	max-width: 900px;
+	margin: 32px auto;
+	padding-top: 32px;
+}
+
+.welcome__right {
+	color: greenyellow;
+}
+
+.navigation__list {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-content: stretch;
+	align-items: center;
+}
+
+.navigation__item {
+	display: block;
+	margin: 0 25px;
+}
+
+.navigation__link:hover {
+	color: black;
+	background: #fff;
+}
+
+
+.site-header {
+	background-color: #ffe53b;
+	background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+	box-sizing: border-box;
+	left: 0;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	height: 64px;
+	grid: header;
+}
+
+.site-header:hover {
+	background: lightcoral;
+}
+
+@media (min-width: 1200px) {
+	.main {
+		max-width: 1000px;
+	}
+}
+
+@media (max-width: 800px) {
+	.navigation__list {
+		flex-direction: column;
+		display: none;
+	}
+	.navigation__item {
+		margin: 16px;
+	}
+	.navigation__list--visible {
+		display: flex;
+	}
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
