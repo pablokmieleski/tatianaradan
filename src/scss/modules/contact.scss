@@ -3,14 +3,18 @@
     padding: 2rem 4rem 2rem;
     color: indigo;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 60%;
     background: lavender;
     text-align: center;
-    line-height: 1.75rem;
+    line-height: 1.50rem;
     &__title {
-        line-height: 2.75rem;
+        line-height: 2.25rem;
         font-size: 2rem;
         padding-bottom: 8px;
-        line-height: 2.75rem;
     }
+}
+
+
+.map {
+
 }

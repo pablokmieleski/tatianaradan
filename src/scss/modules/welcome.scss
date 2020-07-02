@@ -3,8 +3,19 @@
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 16px;
 	grid-row-gap: 16px;
+	max-width: 1248px;
+    padding: 4rem 16px 4rem;
+	margin: 0 auto;
 	&__right {
 		text-align: center;
-		padding-top: 20rem;
+		padding-top: 18rem;
+	}
+	&__photo {
+		max-width: 100%;
+		max-height: 800px;
+		margin-top: 100px;
+		margin-left: 72px;
+		margin-right: auto;
+		display: block;
 	}
 }
