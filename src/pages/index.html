@@ -17,7 +17,13 @@
   <!-- uncomment the line below to enable PWA  -->
   <!-- <link rel="manifest" href="manifest.json" /> -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="icon" type="image/png" href="../assets/icons/favicon-96x96.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -25,22 +31,21 @@
     <button class="hamburger hamburger--js" aria-label="otwórz menu">≡</button>
     <nav class="navigation">
       <ul class="navigation__list navigation__list--js">
-        <li class="navigation__item"><a class="navigation__link" href="#about">About me</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#offer">Offer</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#contact">Contact</a></li>
+        <li class="navigation__list--item"><a class="navigation__link" href="#about">About me</a></li>
+        <li class="navigation__list--item"><a class="navigation__link" href="#offer">Offer</a></li>
+        <li class="navigation__list--item"><a class="navigation__link" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <div class="welcome">
-      <div class="welcome__left"><img src="../assets/img/tatiana.jpg" class="welcome__photo" alt="Tatiana.">
-      </div>
-      <div class="welcome__right">
-        <h3> Hey there! 👋,<br><br> my name is<br></h3>
+    <section class="welcome">
+      <div class="slogan">
+        <h1> Hey there! 👋 , my name is<br>
           <p class="special">Tatiana Radan</p>
-          <br><h3>and I am personal trainer & nutritionist</h3>
+          and I am personal trainer & nutritionist
+        </h1>
       </div>
-    </div>
+    </section>
 
     <section id="about" class="about">
       My name is Tatiana. I am a PT and Nutrition Consultant in Milton Keynes. After
@@ -79,8 +84,8 @@
         </ul>
         <div class="rep_logo">
           <img class="reps" src="../assets/img/reps.png" alt="Registered Exercise Proffesional.">
+        </div>
       </div>
-    </div>
       <div>
         <h2 class="skills__title">Skills Areas:</h2>
         <ul class="skills__list">
