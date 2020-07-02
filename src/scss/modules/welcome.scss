@@ -2,13 +2,14 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 16px;
-	grid-row-gap: 16px;
 	max-width: 1248px;
     padding: 4rem 16px 4rem;
 	margin: 0 auto;
+
 	&__right {
 		text-align: center;
-		padding-top: 18rem;
+		padding-top: 96px;
+		overflow: hidden;
 	}
 	&__photo {
 		max-width: 100%;
@@ -18,4 +19,8 @@
 		margin-right: auto;
 		display: block;
 	}
+}
+
+.special {
+	font-size: 72px;
 }

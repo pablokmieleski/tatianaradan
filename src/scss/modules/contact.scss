@@ -14,7 +14,35 @@
     }
 }
 
+.social {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    &__item {
+        & + & {
+            margin-left: 1.5rem;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        &:visited {
+            text-decoration: none;
+        }
+    }
+    &__icon:hover {
+        transition: transform 0.05s linear;
+        transform: scale(1.1);
+    }
+}
 
-.map {
 
+.footer {
+	background-color: #000;
+    padding: 10px;
+    &__paragraph {
+        color: #fff;
+        text-align: center;
+    }
 }
